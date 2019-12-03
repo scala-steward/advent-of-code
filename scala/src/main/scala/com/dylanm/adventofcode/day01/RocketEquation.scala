@@ -8,7 +8,7 @@ import scala.io.Source
  */
 object RocketEquation {
 
-  def read(filePath: String): List[Int] = Source.fromFile(filePath).getLines.map(_.toInt).toList
+  def read(filePath: String): List[Int] = io.Source.fromFile(filePath).getLines.map(_.toInt).toList
 
   def puzzle1(masses: List[Int]): Long = calculateSumOfFuelRequirements(masses, simpleFuelRequired)
 

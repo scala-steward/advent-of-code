@@ -11,7 +11,7 @@ class ProgramAlarmTest extends AnyFlatSpec with Matchers {
   private val filePath = "src/main/resources/day02/input.txt"
 
   it should "produce correct result for puzzle 1" in {
-    puzzle1(filePath) shouldBe 3895705
+    puzzle1(filePath) shouldBe 4690667
   }
 
   it should "produce the correct output" in {
@@ -23,7 +23,7 @@ class ProgramAlarmTest extends AnyFlatSpec with Matchers {
   }
 
   it should "produce correct result for puzzle 2" in {
-    puzzle2(filePath, target=19690720) shouldBe 6417
+    puzzle2(filePath, target=19690720) shouldBe 6255
   }
 
 

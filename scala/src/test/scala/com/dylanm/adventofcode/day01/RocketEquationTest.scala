@@ -20,7 +20,7 @@ class RocketEquationTest extends AnyFlatSpec with Matchers {
 
   it should "produce the correct solution for puzzle 1" in {
     val masses = read("src/main/resources/day01/input.txt")
-    puzzle1(masses) shouldBe 3317668
+    puzzle1(masses) shouldBe 3332538
   }
 
   it should "produce the correct recursive fuel required" in {
@@ -30,7 +30,7 @@ class RocketEquationTest extends AnyFlatSpec with Matchers {
 
   it should "print out the puzzle 2 solution" in {
     val masses = read("src/main/resources/day01/input.txt")
-    puzzle2(masses) shouldBe 4973628
+    puzzle2(masses) shouldBe 4995942
   }
 
 }

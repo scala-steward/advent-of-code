@@ -75,11 +75,11 @@ class CrossedWiresTest extends AnyFlatSpec with Matchers {
   }
 
   it should "produce the correct result for puzzle 1" in {
-    CrossedWires.puzzle1(filePath) shouldBe 1017
+    CrossedWires.puzzle1(filePath) shouldBe 266
   }
 
   it should "produce the correct result for puzzle 2" in {
-    CrossedWires.puzzle2(filePath) shouldBe 11432
+    CrossedWires.puzzle2(filePath) shouldBe 19242
   }
 
   it should "produce the correct minimum total wire length to an intersection 1" in {

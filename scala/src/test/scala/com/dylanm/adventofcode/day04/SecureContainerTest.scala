@@ -1,6 +1,6 @@
-package com.jswarburton.adventofcode.day04
+package com.dylanm.adventofcode.day04
 
-import com.jswarburton.adventofcode.day04.SecureContainer._
+import com.dylanm.adventofcode.day04.SecureContainer._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 

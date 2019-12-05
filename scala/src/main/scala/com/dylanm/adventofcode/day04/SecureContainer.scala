@@ -1,4 +1,4 @@
-package com.jswarburton.adventofcode.day04
+package com.dylanm.adventofcode.day04
 
 import scala.annotation.tailrec
 

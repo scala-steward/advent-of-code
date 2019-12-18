@@ -4,9 +4,9 @@ import scala.annotation.tailrec
 
 case class State(state: Map[Int, Long],
                  inputInstructions: List[Long],
-                 outputs: List[Long],
-                 pointer: Int,
-                 relativeBase: Int)
+                 outputs: List[Long]= List(),
+                 pointer: Int = 0,
+                 relativeBase: Int = 0)
 
 object IntCode {
   def runIntCode(data: List[Long], inputInstruction: Long): List[Long] = runIntCode(data, List(inputInstruction))
@@ -15,7 +15,7 @@ object IntCode {
     val indexToValue = data.zipWithIndex.map { case (value, idx) => (idx, value) }.toMap
       .withDefaultValue(0L)
 
-    val initialState = State(indexToValue, inputInstructions, List(), 0, 0)
+    val initialState = State(indexToValue, inputInstructions)
 
     @tailrec
     def rec(state: State): List[Long] = runUntilOutput(state) match {
@@ -30,7 +30,7 @@ object IntCode {
     val indexToValue = data.zipWithIndex.map { case (value, idx) => (idx, value) }.toMap
       .withDefaultValue(0L)
 
-    val state = State(indexToValue, inputInstructions, List(), 0, 0)
+    val state = State(indexToValue, inputInstructions)
 
     runUntilOutput(state)
   }
